@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: comics
+  data:
+    mongodb:
+      uri: mongodb+srv://condominium:62DC9G8V4RlAwqOX@condominium.qfgszpm.mongodb.net/condominio
+      database: condominio
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /api-docs/swagger-ui.html
+
+server:
+  port: 8080
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
